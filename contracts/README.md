@@ -1,7 +1,7 @@
  
 # Clarity Smart Contracts
 
-<b>Note:</b> These smart contracts are written for the [Blockstack Level 2 - ADVANCED:  Clarity Hackathon.](https://gitcoin.co/issue/blockstack/hackathons/3/4356) Contracts may be be deployed on the Neon Testnet. 
+<b>Note:</b> These smart contracts are written for the [Blockstack Level 2 - ADVANCED:  Clarity Hackathon.](https://gitcoin.co/issue/blockstack/hackathons/3/4356) Contracts may be deployed on the Neon Testnet. 
 
 ## Overview
 
@@ -27,8 +27,23 @@ Contract structure:
 
 ### Assure Base -  Determine Contract Data Structure
 
-> This is where we define the most fundamental code shared throughout the core
-> functionality. This includes our main data storage, constants and data types, plus
-> internal functions for managing these items.
+> This contract covers the fundamental code critical to core functionality. It describes data storage, data types and internal functions managing these items. 
 >
-> -- Commentary from the CryptoKitties source code
+> -- Commentary from the source code
+
+### Assure Ownership - Data As Tokens
+
+> This provides the methods required for basic non fungible token
+> transactions, modelled after [ERC-721 spec](https://github.com/ethereum/EIPs/issues/721).
+>
+> -- Commentary from the source code
+
+### Assure Activate - Determine Contract Functions
+
+> This file contains the methods necessary to for password data to be retrieved, encrypted, decrypted, linked to control accounts and other contract combinations. 
+>
+> -- Commentary from the source code
+
+### Assure Core - Determine Contract Minting
+
+> This contract covers all the minting functions critical to the generation and addition of new passwords to the networks. 
