@@ -16,33 +16,19 @@ Contract structure:
 > - Share passwords securely with family or team
 > - Alert user to breaches and other security problems.
 > 
-> The Core functions allow verification, 
+> The core functions allow verification, management and transmission of digital password data. Users will retain complete control of this portable data enhancing peer-to-peer on-chain publication. 
 
-We've written simple smart contracts for Assure, a security browser extension that is designed to:
+### Assure AccessControl - Determine Contract Access Controls
 
-- add/delete passphrases
-- encrypt & store passphrases
-- store & retrieve passphrases
+> This contract manages the various addresses and constraints for operations
+> that can be executed only by specific roles. Namely `Chief`, `Executive` and `Officer`.
+>
+> -- Commentary from the source code 
 
-### Contracts
+### Assure Base -  Determine Contract Data Structure
 
-These contracts, beginner, intermediate or advanced, run on Blockstack. 
-
-    .
-    +-- contracts
-    |    +-- account (Contract to create account on the browser extension)
-    |    +-- intermediate  (Funtionality contracts with various properties)
-    |    +-- assure (Contract that combines all the properties and functions)
-
-To get started `cd` into the contract directory and run:
-
-    npm install
-
-to run tests, `cd` into the respects contract test directories and run:
-
-    npm test
-
-You can also create a development environment with Gitpod to build and test the contracts. 
-Happy Hacking!
-
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/realChainLife/assure-security)
+> This is where we define the most fundamental code shared throughout the core
+> functionality. This includes our main data storage, constants and data types, plus
+> internal functions for managing these items.
+>
+> -- Commentary from the CryptoKitties source code
